@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
 
 namespace RPG_Console_CSharp
 {
@@ -69,9 +70,22 @@ namespace RPG_Console_CSharp
             }
         }
 
-        public void Move()
+        public (int,int) Move()
         {
-
+            ConsoleKey key = Console.ReadKey().Key;
+            switch (key)
+            {
+                case ConsoleKey.UpArrow:
+                    return (0, 1);
+                case ConsoleKey.DownArrow:
+                    return (0, -1);
+                case ConsoleKey.RightArrow:
+                    return (1, 0);
+                case ConsoleKey.LeftArrow:
+                    return (-1, 0);
+                default:
+                    return (0, 0);
+            }
         }
     }
 }
