@@ -6,7 +6,10 @@ namespace RPG_Console_CSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game g = new Game();
+            Map m = new Map(3, 2);
+            m.FillMap(m.map);
+            g.TheGame(m.map);
         }
     }
 }
