@@ -6,8 +6,8 @@ namespace RPG_Console_CSharp
 {
     class Character
     {
-        private int pv;
-        private List<Attack> attacks; // <name, <range, damage>>
+        protected int pv;
+        protected List<Attack> attacks; // <name, <range, damage>>
 
         public Character(int pv, List<Attack> attacks)
         {
@@ -18,7 +18,9 @@ namespace RPG_Console_CSharp
         public Character(int pv, string attackName, int damage, int range)
         {
             this.pv = pv;
+            attacks = new List<Attack>();
             attacks.Add(new Attack(attackName, damage, range));
         }
+
     }
 }

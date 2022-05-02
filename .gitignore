@@ -15,3 +15,10 @@ RPG-Console/.vs/RPG-Console/v16/.suo
 RPG-Console/.vs/RPG-Console/v16/Browse.VC.db
 RPG-Console/.vs/RPG-Console/v16/ipch/AutoPCH/3baff5a7afbadf38/MAP.ipch
 RPG-Console/.vs/RPG-Console/v16/ipch/AutoPCH/8922d21fd27e9330/RPG-CONSOLE.ipch
+RPG-Console-CSharp/.vs/RPG-Console-CSharp/DesignTimeBuild/.dtbcache
+RPG-Console-CSharp/bin/Debug/netcoreapp3.0/RPG-Console-CSharp.dll
+RPG-Console-CSharp/bin/Debug/netcoreapp3.0/RPG-Console-CSharp.exe
+RPG-Console-CSharp/bin/Debug/netcoreapp3.0/RPG-Console-CSharp.deps.json
+RPG-Console-CSharp/bin/Debug/netcoreapp3.0/RPG-Console-CSharp.pdb
+RPG-Console-CSharp/bin/Debug/netcoreapp3.0/RPG-Console-CSharp.runtimeconfig.dev.json
+RPG-Console-CSharp/bin/Debug/netcoreapp3.0/RPG-Console-CSharp.runtimeconfig.json
