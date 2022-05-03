@@ -55,9 +55,11 @@ namespace RPG_Console_CSharp
                 {
                     case "1":
                         // passe en mode déplacement
+                        Game.InDeplacement = true;
                         break;
                     case "2":
                         // ouvrir le fichier avec plus d'info
+                        // Appeler une fonction de map
                         break;
                     case "3":
                         Console.WriteLine("Quel menu ?\n Merci de choisir une véritable action");
