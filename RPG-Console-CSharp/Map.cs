@@ -7,9 +7,15 @@ namespace RPG_Console_CSharp
 {
     class Map
     {
-        public char[,] map;
+        private char[,] map;
+        private char[,] mapOrigin;
+        private string pieceName;
         private int width;
         private int height;
+
+        public char[,] MyMap { get { return map; } set { map = value; } }
+        public char[,] MapOrigin { get { return mapOrigin; } set { mapOrigin = value; } }
+        public string PieceName { get { return pieceName; } set { pieceName = value; } }
 
         // constructor
         public Map(int w, int h)
@@ -43,7 +49,7 @@ namespace RPG_Console_CSharp
             return map;
         }
 
-        private char[,] FillMapWithFile(string path, char[,] map)
+        public char[,] FillMapWithFile(string path, char[,] map)
         {
             using (StreamReader sr = new StreamReader(path))
             {
@@ -61,6 +67,7 @@ namespace RPG_Console_CSharp
                     j = 0;
                 }
             }
+            mapOrigin = map;
             return map;
         }
     }
