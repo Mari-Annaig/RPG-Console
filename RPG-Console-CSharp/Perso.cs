@@ -7,14 +7,20 @@ namespace RPG_Console_CSharp
 {
     class Perso : Character
     {
-        public Perso(int pv, List<Attack> attacks) : base(pv, attacks)
-        {
+        private (int, int) pos;
 
+        public (int, int) Position { get { return pos; } set { pos = value; } }
+        public int X { get { return pos.Item1; } set { pos.Item1 = value; } }
+        public int Y { get { return pos.Item2; } set { pos.Item2 = value; } }
+
+        public Perso(int pv, List<Attack> attacks, (int, int) positionDepart) : base(pv, attacks)
+        {
+            this.pos = positionDepart;
         }
 
-        public Perso(int pv, string attackName, int damage, int range) : base(pv, attackName, damage, range)
+        public Perso(int pv, string attackName, int damage, int range, (int, int) positionDepart) : base(pv, attackName, damage, range)
         {
-            
+            this.pos = positionDepart;
         }
 
         public void Action(bool inBattle)
@@ -78,13 +84,13 @@ namespace RPG_Console_CSharp
             switch (key)
             {
                 case ConsoleKey.UpArrow:
-                    return (0, 1);
-                case ConsoleKey.DownArrow:
-                    return (0, -1);
-                case ConsoleKey.RightArrow:
-                    return (1, 0);
-                case ConsoleKey.LeftArrow:
                     return (-1, 0);
+                case ConsoleKey.DownArrow:
+                    return (1, 0);
+                case ConsoleKey.RightArrow:
+                    return (0, 1);
+                case ConsoleKey.LeftArrow:
+                    return (0, -1);
                 default:
                     return (0, 0);
             }
