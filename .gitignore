@@ -26,3 +26,17 @@ RPG-Console-CSharp/obj/Debug/netcoreapp3.0/RPG-Console-CSharp.csproj.FileListAbs
 RPG-Console-CSharp/obj/Debug/netcoreapp3.0/RPG-Console-CSharp.pdb
 RPG-Console-CSharp/obj/Debug/netcoreapp3.0/RPG-Console-CSharp.dll
 RPG-Console-CSharp/obj/Debug/netcoreapp3.0/RPG-Console-CSharp.exe
+*.v2
+RPG-Console-CSharp/.vs/RPG-Console-CSharp/v15/.suo
+*.sln
+*.htm
+*.sln
+*.cache
+*.json
+*.editorconfig
+*.exe
+*.cs
+*.sln
+*.user
+*.filters
+*.vcxproj

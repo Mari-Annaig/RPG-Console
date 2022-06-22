@@ -33,9 +33,6 @@ namespace RPG_Console_CSharp
 
         private char[,] FillBorder(char[,] map)
         {
-            Console.WriteLine(map.Length);
-            Console.WriteLine(map.GetLength(0));
-            Console.WriteLine(map.GetLength(1));
             for (int i = 0; i < this.width; i++)
             {
                 map[i, 0] = '|';
@@ -69,6 +66,11 @@ namespace RPG_Console_CSharp
             }
             mapOrigin = map;
             return map;
+        }
+
+        public bool IsWall(int x, int y)
+        {
+            return ((map[x, y] == '|') || (map[x, y] == '_'));
         }
     }
 }
